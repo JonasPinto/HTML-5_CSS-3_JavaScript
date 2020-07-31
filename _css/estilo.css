@@ -4,7 +4,7 @@ body {
 }
 p {
     text-align: justify;
-    text-indent: 50px;
+    text-indent: 35px;
 }
 /* Formatação de imagens com legenda */
 
@@ -29,7 +29,9 @@ figure.foto-legenda figcaption {
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
+    transition: opacity 1s;
 }
 figure.foto-legenda:hover figcaption {
     opacity: 1;
+
 }
