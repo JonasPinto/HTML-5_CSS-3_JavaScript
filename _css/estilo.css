@@ -43,12 +43,15 @@ nav#menu ul {
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: 0px;
-    left: 500px;
+    top: -15px;
+    left: 700px;
 }
 nav#menu li{
     display: inline-block;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(238, 238, 238);
     padding: 10px;
     margin: 2px;
+}
+nav#menu h1{
+   display: none; 
 }
