@@ -71,10 +71,9 @@ figure.foto-legenda:hover figcaption {
 
 }
 figure.foto-legenda figcaption h1 {
-    position: relative;
-    height: 100%;
+    position: absolute;
     font-family: 'fontimagens';
-    font-size: 100%;
+    font-size: 30px;
     padding: 10px;
 }
 
@@ -117,12 +116,19 @@ section#corpo {
     width: 750px;
     float: left;
     border-right: 1px solid #606060 ;
+    padding: 10px;
 }
 aside#lateral {
+    padding: 10px;
     display: block;
-    width: 350px;
+    width: 500px;
     float: right;
 }
 footer#rodape {
     clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
+
 }
