@@ -1,27 +1,28 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'fontelogo';
-        src: url("../_fonts/TitilliumWeb-Light.ttf");
-    font-family: 'fontimagens';
-        src: url("../_fonts/Jura-Regular.ttf");
+        src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
 body {
-    background-color: #dddddd;
+    background-color: #6d6d6d;
 }
 
 div#interface {
-    width: 1300px;
+    width: 1270px;
+    height: auto;
     background-color: #ffffff;
     margin: auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    padding: -20px 10px 10px 10px 10px;
+    padding: 0px 0px 0px 0px;
 }
 
-p {
-    text-align: justify;
-    text-indent: 50px;
-}
+header#cabecalho h1 {
+    font-family: 'fontelogo';
+    font-size: 50px;
+    color: rgb(136, 136, 136);
+    padding: 10px 0px 10px 500px;
+    background-color: rgb(206, 206, 206);
+} 
 header#cabecalho img#icone {
     position: absolute;
     left: 1140px;
@@ -32,12 +33,12 @@ header#cabecalho {
     height: 150px;
     background: url("../_imagens/glass-logo.jpg") no-repeat 50px 100px;
 }
-header#cabecalho h1 {
+header#cabecalho id#menu h1 {
     font-family: 'fontelogo';
-    font-size: 30pt;
+    font-size: 40px;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    padding: 0px;
+    padding-left: 10px;
     margin-bottom: 0px;
 }
 
@@ -46,7 +47,7 @@ header#cabecalho h1 {
 figure.foto-legenda {
     position: relative;
     border: 4px solid white;
-    box-shadow: 1px 1px 4px rgb(8, 8, 8);        
+    box-shadow: 2px 1px 4px rgb(8, 8, 8);        
 }
 
 figure.foto-legenda img {
@@ -71,8 +72,8 @@ figure.foto-legenda:hover figcaption {
 
 }
 figure.foto-legenda figcaption h1 {
-    position: absolute;
-    font-family: 'fontimagens';
+    position: relative;
+    font-family: 'fontelogo';
     font-size: 30px;
     padding: 10px;
 }
@@ -87,7 +88,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -15px;
-    left: 703px;
+    left: 688px;
 }
 nav#menu li{
     display: inline-block;
@@ -107,7 +108,7 @@ nav#menu a {
     text-decoration: none;
 }
 nav#menu a:hover {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 section#corpo {
@@ -117,14 +118,24 @@ section#corpo {
     float: left;
     border-right: 1px solid #606060 ;
     padding: 10px;
+}article#noticia-principal hgroup h1 {
+    font-family: 'fontelogo';
+    font-size: 30px;
+    color: #606060;
+    padding: 5px 5px 5px 10px;
 }
 article#noticia-principal h2 {
-    font-size: 12pt;
+    font-size: 20px;
     color: #606060;
     background-color: #dddddd;
-    padding: 5px 0px 5px 0px;
-    margin: 10px;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 10px 10px 10px;
 }
+article#noticia-principal p {
+    text-align: justify;
+    text-indent: 35px;
+    margin: 0px 10px 0px 10px;
+    }
 table#tabelaspec{
     border: 1px solid #606060;
     border-spacing: 0px;
@@ -160,9 +171,8 @@ table#tabelaspec caption span {
     margin-top: 10px;
 }
 aside#lateral {
-    padding: 10px;
-    display: block;
-    width: 500px;
+    padding: 20px;
+    width: 450px;
     float: right;
 }
 footer#rodape {
