@@ -5,9 +5,17 @@
 }
 
 body {
-    background-color: #6d6d6d;
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color: #b3b3b3;
+    color: rgba(0, 0, 0, 0.74);
 }
-
+a {
+   color: blue; 
+   text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 div#interface {
     width: 1270px;
     height: auto;
@@ -80,7 +88,7 @@ figure.foto-legenda figcaption h1 {
 
 }
 
-/* Formatação do menu */
+/* Formatação do menu de navegação */
 
 nav#menu {
     display: block;
@@ -197,9 +205,23 @@ table#tabelaspec caption span {
     margin-top: 10px;
 }
 aside#lateral {
-    padding: 20px;
-    width: 450px;
+    padding: 10px 15px 10px 10px;
+    width: 470px;
     float: right;
+}
+aside#lateral h1 {
+    font-family: 'fontelogo',sans-serif;
+    font-size: 30px;
+    color: #606060;
+}
+aside#lateral h2 {
+    background-color: #979797;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 5px 0px 5px 10px;
+}
+aside#lateral p {
+    text-indent: 35px;
 }
 footer#rodape {
     clear: both;
