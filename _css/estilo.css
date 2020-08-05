@@ -5,7 +5,9 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 450;
+
     background-color: #b3b3b3;
     color: rgba(0, 0, 0, 0.74);
 }
@@ -98,7 +100,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -15px;
-    left: 688px;
+    left: 670px;
 }
 nav#menu li{
     display: inline-block;
@@ -124,7 +126,8 @@ nav#menu a:hover {
 section#corpo {
     text-align: justify;
     display: block;
-    width: 750px;
+    width: 740px;
+    margin: 10px;
     float: left;
     border-right: 1px solid #606060 ;
     padding: 10px;
@@ -199,16 +202,17 @@ table#tabelaspec caption {
 }
 table#tabelaspec caption span {
     display: block;
-    float: right;
+    
     color: #000000;
     font-size: 8px;
     margin-top: 10px;
 }
 aside#lateral {
-    padding: 10px 15px 10px 10px;
-    width: 470px;
+    padding: 10px;
+    margin: 20px 20px 20px 0px;
+    width: 440px;
     float: right;
-    background-color: ;
+    background-color: #e7e7e7;
 }
 aside#lateral h1 {
     font-family: 'fontelogo',sans-serif;
@@ -223,6 +227,7 @@ aside#lateral h2 {
 }
 aside#lateral p {
     text-indent: 35px;
+    text-align: justify;
 }
 footer#rodape {
     clear: both;
