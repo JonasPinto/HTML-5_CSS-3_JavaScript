@@ -5,6 +5,7 @@
     <meta charset="utf-8"/>
     <title>Google Glass fale-conosco</title>
     <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
    
 
 </head>
@@ -29,58 +30,55 @@
   </ul>
 </nav>
     </header>
+    <section id="corpo-full">
 
-Glass > Especificações
-Raio-X no Google Glass
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        <article id="noticia-principal">
+        <hgroup>
+        <h3 class="sup">Glass > Fale conosco</h3>
+        <h1 class="pri">Formulario de Contato</h1>
+        <h3 class="sub">Por Jonas da Silva Pinto</h3>
+        <h3 class="dir">Atualizado em 30/julho/2020</h3>
+        </hgroup>
+        </article>
+    </section>
+<form>
+    <fieldset id="usuario">
+        <legend>Identificação do Usuário</legend>
+            <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome completo"/></p>
+            <p>Senha:<input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 dígitos"/></p>
+            <p>E-mail:<input type="email" name="tmail" id="cmail" size="20" maxlength="40"/></p>
+            <fieldset id="sexo"><legend>Sexo</legend>
+                <input type="radio" name="tsexo" id="cmasc"/><label for="cmasc" >Masculino</label> 
+                <input type="radio" name="tsexo" id="cfem"/><label for="cfem">Feminino</label>
+            </fieldset>
+            <p>Data de Nascimento:</p>
+    </fieldset>
 
-Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
+    <fieldset id="endereco">
+        <legend>Endereço do Usuário</legend>
+            Logradouro:
+            Número:
+            Estado:
+            Cidade:
+    </fieldset>
 
-[AQUI ENTRA UMA IMAGEM]
+    <fieldset id="mensagen">
+        <legend>Mensagem do Usuário</legend>
+            Grau de Urgência:
+            Mensagem:
+    </fieldset>
 
-
-[AQUI ENTRA UMA FOTO]
-
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
-
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
+    <fieldset id="pedido">
+        <legend>Quero um Google Glass</legend>
+            Gostaria de adquirir um Google Glass quando disponível
+            Cor:
+            Quantidade:
+            Preço Total: R$
+    </fieldset>
 
 [BOTÃO ENVIAR]
+</form>
+
 <footer id="rodape">
     <p>Copyright &copy; 2020 - Jonas Pinto<br>
     <a href="https://github.com/JonasPinto" target="_blank">GitHub</a></p>
