@@ -38,8 +38,8 @@ header#cabecalho img#icone {
 }
 header#cabecalho {
     border-bottom: 1px #606060 solid;
-    height: 150px;
-    background: url("../_imagens/glass-logo.jpg") no-repeat 50px 100px;
+    height: 170px;
+    background: url("../_imagens/glass-logo.jpg") no-repeat 15px 100px;
 }
 header#cabecalho id#menu h1 {
     font-family: 'fontelogo';
@@ -130,6 +130,11 @@ section#corpo {
     border-right: 1px solid #606060 ;
     padding: 10px;
 }
+section#corpo video {
+    width: 720px;
+    margin: 10px 0px 0px 10px;    
+}
+
 .pri {
     font-family: 'fontelogo';
     font-size: 30px;
@@ -213,6 +218,10 @@ aside#lateral {
     background-color: #e7e7e7;
     box-shadow: 2px 2px 2px rgba(0,0,0,.5) ;
 }
+aside#lateral video {
+    width: 440px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
 aside#lateral h1 {
     margin-top: 10px;
     font-family: 'fontelogo',sans-serif;
@@ -220,6 +229,7 @@ aside#lateral h1 {
     color: #606060;
 }
 aside#lateral h2 {
+    margin-bottom: 0px;
     background-color: #979797;
     font-size: 20px;
     color: #ffffff;
@@ -232,6 +242,7 @@ aside#lateral p {
 footer#rodape {
     clear: both;
     border-top: 1px solid #606060;
+    height: 50px;
 }
 footer#rodape p {
     text-align: center;
