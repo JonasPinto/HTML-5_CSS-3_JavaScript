@@ -38,11 +38,11 @@
         <h3 class="sup">Glass > Fale conosco</h3>
         <h1 class="pri">Formulario de Contato</h1>
         <h3 class="sub">Por Jonas da Silva Pinto</h3>
-        <h3 class="dir">Atualizado em 30/julho/2020</h3>
+        <h3 class="dir">Atualizado em 20/agosto/2020</h3>
         </hgroup>
         </article>
     </section>
-<form>
+<form method="POST" id="fcontato" action="dados-formulario.txt">
     <fieldset id="usuario">
         <legend>Identificação do Usuário</legend>
             <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome completo"/></p>
@@ -57,24 +57,69 @@
 
     <fieldset id="endereco">
         <legend>Endereço do Usuário</legend>
-            <p><label for="crua">Logradouro:</label><input type="text" name="trua" id="crua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ...."/></p>
+            <p><label for="crua">Logradouro:</label><input type="text" name="trua" id="crua" size="13" maxlength="80" placeholder="Rua, Av ..."/></p>
             <p><label for="cnum">Número:</label><input type="number" name="tnum" id="cnum" min="0" max="99999"/></p>
-            <p><label>Estado:</label><input type=""        /></p>
-            <p><label>Cidade:</label><input         /></p>
+
+            <p><label for="cest">Estado:</label><select name="test" id="cest">
+                <optgroup label="Região Sudeste">
+                    <option>Minas Gerais</option>
+                    <option>Espirito santo</option>
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Centro-Oeste ">
+                    <option>Mato Grosso</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Goiás</option>
+                    <option selected>Distrito Federal</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option>Bahia</option>
+                    <option>Piauí</option>
+                    <option>Maranhão</option>
+                    <option>Ceará</option>
+                    <option>Sergipe</option>
+                    <option>Alagoas</option>
+                    <option>Pernambuco</option>
+                    <option>Paraíba</option>
+                    <option>Rio Grande do Norte</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option>Acre</option>
+                    <option>Amapá</option>
+                    <option>Amazonas</option>
+                    <option>Pará</option>
+                    <option>Tocantins</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                </optgroup>
+
+                <optgroup label="Região Sul">
+                    <option>Paraná</option>
+                    <option>Santa Catarina</option>
+                    <option>Rio Grande do Sul</option>
+                </optgroup>
+            </select>   
+            </p>
+
+            <p><label for="ccid">Cidade:</label><input type=""/></p>
     </fieldset>
 
     <fieldset id="mensagen">
         <legend>Mensagem do Usuário</legend>
-            Grau de Urgência:
-            Mensagem:
+            <p><label for="curg">Grau de Urgência:</label></p>
+            <p><label for="cmsg">Mensagem:</label></p>
     </fieldset>
 
     <fieldset id="pedido">
         <legend>Quero um Google Glass</legend>
-            Gostaria de adquirir um Google Glass quando disponível
-            Cor:
-            Quantidade:
-            Preço Total: R$
+            <p><label for="cped">Gostaria de adquirir um Google Glass quando disponível</label></p>
+            <p><label for="ccor">Cor:</label></p>
+            <p><label for="cqtd">Quantidade:</label></p>
+            <p><label for="ctot">Preço Total: R$</label></p>
     </fieldset>
 
 [BOTÃO ENVIAR]
