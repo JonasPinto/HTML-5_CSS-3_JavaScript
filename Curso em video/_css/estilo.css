@@ -40,6 +40,9 @@ header#cabecalho {
     height: 172px;
     background-color: #000000;
 }
+header#cabecalho figure {
+    margin-top: 30px;
+}
 
 figure.foto-legenda {
     position: relative;
@@ -114,7 +117,7 @@ section#corpo {
     text-align: justify;
     display: block;
     width: 740px;
-    margin: 10px;
+    margin: 0px 10px 0px 10px;
     float: left;
     border-right: 1px solid #606060 ;
     padding: 10px;
@@ -231,9 +234,10 @@ aside#lateral p {
 footer#rodape {
     clear: both;
     border-top: 1px solid #606060;
-    height: 50px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.85);
 }
 footer#rodape p {
     text-align: center;
-
+    color: #ffffff;
 }
