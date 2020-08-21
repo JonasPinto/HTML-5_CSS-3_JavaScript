@@ -37,20 +37,9 @@ header#cabecalho img#icone {
     top: 70px;    
 }
 header#cabecalho {
-    border-bottom: 1px #606060 solid;
-    height: 170px;
-    background: url("../_imagens/glass-logo.jpg") no-repeat 15px 100px;
+    height: 172px;
+    background-color: #000000;
 }
-header#cabecalho id#menu h1 {
-    font-family: 'fontelogo';
-    font-size: 40px;
-    color: #606060;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    padding-left: 10px;
-    margin-bottom: 0px;
-}
-
-/* Formatação de imagens com legenda */
 
 figure.foto-legenda {
     position: relative;
