@@ -105,13 +105,21 @@
             </select>   
             </p>
 
-            <p><label for="ccid">Cidade:</label><input type=""/></p>
+            <p><label for="ccid">Cidade:</label>
+                <input type="text" name="tcid" id="ccid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/></p>
+           <datalist id="cidades">
+               <option value="São Paulo"></option>
+               <option value="Campinas"></option>   
+               <option value="Ribeirão Preto"></option>   
+               <option value="São José dos Campos"></option>   
+
+           </datalist> 
     </fieldset>
 
     <fieldset id="mensagen">
         <legend>Mensagem do Usuário</legend>
-            <p><label for="curg">Grau de Urgência:</label></p>
-            <p><label for="cmsg">Mensagem:</label></p>
+            <p><label for="curg">Grau de Urgência: </label>Min<input type="range" name="tur" id="cur" min="0" max="10" step="2"/>Max</p>
+            <p><label for="cmsg">Mensagem:</label><textarea name="tmsg" id="cmsg" cols="45" rows="5" placeholder="Deixe aqui sua Mensagem" ></textarea></p>
     </fieldset>
 
     <fieldset id="pedido">
