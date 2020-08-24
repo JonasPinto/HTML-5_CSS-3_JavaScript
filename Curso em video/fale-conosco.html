@@ -6,10 +6,16 @@
     <title>Google Glass fale-conosco</title>
     <link rel="stylesheet" href="_css/estilo.css"/>
     <link rel="stylesheet" href="_css/form.css"/>
-   
-
+    <script src="_javascript/funcoes.js"> </script>
+    <script>
+        function cauc_total(){
+            var qtd = parseInt(document.getElementById('cqtd').value);
+            tot = qtd * 1500;
+            document.getElementById('ctot').value = tot;
+        }   
+    </script>
 </head>
-<script src="_javascript/funcoes.js"> </script>
+
 <body>
 <div id="interface"> 
 
@@ -42,7 +48,7 @@
         </hgroup>
         </article>
     </section>
-<form method="POST" id="fcontato" action="dados-formulario.txt">
+<form method="POST" id="fcontato" action="dados-formulario.txt" oninput="cauc_total();">
     <fieldset id="usuario">
         <legend>Identificação do Usuário</legend>
             <p><label for="cnome">Nome:</label><input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome completo"/></p>
@@ -127,9 +133,9 @@
             <p><input type="checkbox" name="tped" id="cped" checked/><label for="cped">Gostaria de adquirir um Google Glass quando disponível</label></p>
             <p><label for="ccor">Cor:</label><input type="color" name="tcor" id="ccor" value="#0000ff"/></p>
             <p><label for="cqtd">Quantidade:</label><input type="number" name="tqtd" id="cqtd" min="0" max="5" value="0"/></p>
-            <p><label for="ctot">Preço Total: R$</label><input type="text" name="ttot" id="ctot" placeholder="Total a Pagar" readonly/></p>
+            <p><label for="ctot">Preço Total: US$</label><input type="text" name="ttot" id="ctot" placeholder="Total a Pagar" readonly/></p>
     </fieldset>
-<input type="image" name="tenviar" src="_imagens/"/>
+<input type="image" name="tenviar" src="_imagens/botao-enviar.png"/>
 </form>
 
 <footer id="rodape">
