@@ -94,9 +94,8 @@ nav#menu ul {
 }
 nav#menu li{
     display: inline-block;
-    background-color: #dddddd;
-    padding: 10px;
-    margin: 2px;
+    background-color: #cecece;
+    padding: 05px;
     transition: background-color 1s;
 }
 nav#menu li:hover {
@@ -111,7 +110,6 @@ nav#menu a {
 }
 nav#menu a:hover {
     color: rgb(255, 255, 255);
-    text-decoration: underline;
 }
 section#corpo {
     text-align: justify;
